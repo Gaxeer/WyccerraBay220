@@ -53,6 +53,6 @@
 			resources[R.type] = R.volume * FABRICATOR_EXTRA_COST_FACTOR
 
 	item_prototype.ImmediateOverlayUpdate()
-	image = icon2base64(getFlatIcon(item_prototype))
+	image = icon2base64(getFlatIcon(item_prototype, always_use_defdir = TRUE))
 
 	qdel(item_prototype)
